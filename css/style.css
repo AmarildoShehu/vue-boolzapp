@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    rgba(7, 94, 84, 0.863),
+    rgba(197, 197, 196, 0.904)
+  );
+}
+
+.container {
+  min-height: 200px;
+  background-color: antiquewhite;
+}
