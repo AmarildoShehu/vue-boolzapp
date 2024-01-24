@@ -5,13 +5,12 @@
 }
 
 .wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(
-    rgba(7, 94, 84, 0.863),
-    rgba(197, 197, 196, 0.904)
-  );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, rgb(0, 149, 135) 80px, rgb(216, 217, 209) 80px);
 }
 
 .container {
@@ -26,4 +25,16 @@
 .side{
     border: 1px solid black;
     height: 300px;
+}
+
+
+/* SIDE RIGHt */
+#chat {
+    height: 75%;
+    background-image: url('/img/mine.jpg'); /* Aggiungi il punto e virgola e correggi l'URL dell'immagine */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Colore del testo sulla sezione, cambialo a seconda delle tue esigenze */
+    text-align: center;
+    
 }

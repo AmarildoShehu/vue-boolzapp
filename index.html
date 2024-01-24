@@ -32,7 +32,7 @@
   </head>
   <body>
     <div id="root" class="wrapper">
-      <div class="container border border-black mt-5">
+      <div class="container border border-black mt-3">
         <div class="row">
             <div class="col-4 border border-black">
                 <header class="d-flex justify-content-between border border-black">
@@ -45,20 +45,29 @@
                     </div>
                 </header>
                 <div class="side border border-black">
-
+                    <section id="notifications">
+                        <p>Ricevi notifiche desktop</p>
+                    </section>
+                    <section id="contacts" class="border border-black">
+                        <div id="search-bar" class="border border-black">Search bar</div>
+                        <div id="contact-list" class="border border-black">
+                            <ul>
+                                <li>contact</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="col-8 border border-black">
-                <header class="d-flex justify-content-between">
-                    <div>
-                        img
-                        <span>name</span> 
-                    </div>
-                    <div>
-                        icon
-                    </div>
+            <div class="col-8">
+                <header id="chat-head" class="border border-black">
+                    <h2>Contact name</h2>
                 </header>
-               
+                <section id="chat" class="border border-black">
+                    
+                </section>
+                <section id="user-messagebar" class="border border-black">
+                    <p>message...</p>
+                </section>
             </div>
       </div>
     </div>
