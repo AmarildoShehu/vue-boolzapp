@@ -31,10 +31,10 @@
 /* SIDE RIGHt */
 #chat {
     height: 75%;
-    background-image: url('/img/mine.jpg'); /* Aggiungi il punto e virgola e correggi l'URL dell'immagine */
+    background-image: url('/img/mine.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff; /* Colore del testo sulla sezione, cambialo a seconda delle tue esigenze */
+    color: #fff; 
     text-align: center;
     
 }
