@@ -1,3 +1,4 @@
+console.log('js data ok')
 const data = {
   user: {
     name: 'Nome Utente',
@@ -190,3 +191,4 @@ const data = {
 
 }
 
+console.log(data);
