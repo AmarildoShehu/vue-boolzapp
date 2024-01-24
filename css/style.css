@@ -11,7 +11,7 @@
 }
 
 .container {
-  min-height: 200px;
+  min-height: 400px;
   background-color: antiquewhite;
 }
 
@@ -21,7 +21,7 @@
 /* SIDE LEFT */
 .side{
     border: 1px solid black;
-    height: 300px;
+   
 }
 
 
