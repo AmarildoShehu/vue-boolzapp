@@ -31,10 +31,12 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div id="root" class="wrapper">
-      <div class="container border border-black mt-3">
-        <div class="row">
-            <div class="col-4 border border-black">
+    <div id="root" class="d-flex justify-content-center align-item-center h-100">
+      <div class="container shadow bg-white row">
+        <div class="row h-100">
+            
+            <!-- Sidebar -->
+            <div class="col-4 h-100 p-0 bg-light-gray">
                 <header class="d-flex justify-content-between border border-black">
                     <div>
                         img
@@ -48,19 +50,19 @@
                     <section id="notifications">
                         <p>Ricevi notifiche desktop</p>
                     </section>
-                    <section id="contacts" class="border border-black">
-                        <form class="col-12 mb-3" role="search">
-                            <input type="search" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search">
-                          </form>
-                        <div id="contact-list" class="border border-black">
-                            <ul>
-                                <li>contact</li>
-                            </ul>
-                        </div>
-                    </section>
+
+                    <!-- Search section -->
+                    <div id="search-contacts" class="flex-shrink-0 p-2">
+                        <i class="fa-solid fa-search text-muted"></i>
+                        <input type="text" class="w-100" placeholder="Cerca contatto">
+                    </div>
+
+                  
                 </div>
             </div>
-            <div class="col-8">
+            
+            <!-- Chat Section -->
+            <div class="col-8 p-0 h-100 bg-chat-color">
                 <header id="chat-head" class="border border-black">
                     <h2>Contact name</h2>
                 </header>
