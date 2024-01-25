@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.wrapper {
+body{
     height: 100vh;
     padding-top: 20px;
     background: linear-gradient(to bottom, rgb(0, 149, 135) 80px, rgb(216, 217, 209) 80px);

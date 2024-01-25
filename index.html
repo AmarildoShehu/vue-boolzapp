@@ -36,7 +36,7 @@
         <div class="row h-100">
             
             <!-- Sidebar -->
-            <div class="col-4 h-100 p-0 bg-light-gray">
+            <section class="col-4 h-100 p-0 bg-light-gray">
                 <header class="d-flex justify-content-between border border-black">
                     <div>
                         img
@@ -46,23 +46,23 @@
                         icon
                     </div>
                 </header>
-                <div class="side border border-black">
-                    <section id="notifications">
-                        <p>Ricevi notifiche desktop</p>
-                    </section>
+                <section id="notifications">
+                    <p>Ricevi notifiche desktop</p>
+                </section>
 
                     <!-- Search section -->
-                    <div id="search-contacts" class="flex-shrink-0 p-2">
-                        <i class="fa-solid fa-search text-muted"></i>
-                        <input type="text" class="w-100" placeholder="Cerca contatto">
-                    </div>
-
-                  
+                <div id="search-contacts" class="flex-shrink-0 p-2">
+                    <i class="fa-solid fa-search text-muted"></i>
+                    <input type="text" class="w-100" placeholder="Cerca contatto">
                 </div>
-            </div>
+                <!-- contact list -->
+                <div id="contact-list" class="flex-grow-1 overflow-auto bg-white">
+                    
+                </div>
+            </section>
             
             <!-- Chat Section -->
-            <div class="col-8 p-0 h-100 bg-chat-color">
+            <section class="col-8 p-0 h-100 ">
                 <header id="chat-head" class="border border-black">
                     <h2>Contact name</h2>
                 </header>
@@ -72,7 +72,7 @@
                 <section id="user-messagebar" class="border border-black">
                     <p>message...</p>
                 </section>
-            </div>
+            </section>
       </div>
     </div>
   </body>
