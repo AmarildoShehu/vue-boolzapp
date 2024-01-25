@@ -78,16 +78,8 @@ body {
   border: 0;
   height: 100%;
 }
-/* SIDE LEFT */
-.side {
-  border: 1px solid black;
-}
 
 /* SIDE RIGHT Chat Section */
-
-header {
-  height: 70px;
-}
 
 .chat-background {
   background-image: url("/img/mine.jpg");
@@ -97,6 +89,28 @@ header {
   text-align: center;
 }
 
-footer {
-  height: 70px;
+.sent {
+  justify-content: end;
+}
+
+.received {
+  justify-content: start;
+}
+
+.sent .message {
+  background-color: #01b6a4f1;
+}
+
+.received .message {
+  background-color: var(--light-gray);
+}
+.message p {
+  margin-bottom: 0;
+}
+
+.message time {
+  display: block;
+  text-align: right;
+  font-size: 11px;
+  color: rgba(80, 79, 79, 0.815);
 }

@@ -125,13 +125,46 @@
             </header>
 
             <!-- CHAT message section -->
-            <section
-              class="flex-grow-1 overflow-auto chat-background"
-            ></section>
+            <section class="flex-grow-1 overflow-auto chat-background">
+              <ul class="px-3">
+                <li class="message-container d-flex p-3 sent">
+                  <div class="message p-2 rounded-3">
+                    <p>Che stai facendo?</p>
+                    <time datetime="2024-01-01T13.00">01/01/2024 - 13:00</time>
+                  </div>
+                </li>
+                <li class="message-container d-flex p-3 received">
+                  <div class="message p-2 rounded-3">
+                    <p>Che stai facendo?</p>
+                    <time datetime="2024-01-01T13.00">01/01/2024 - 13:00</time>
+                  </div>
+                </li>
+              </ul>
+            </section>
 
             <!-- chat footer -->
-            <footer id="user-messagebar" class="flex-shrink-0">
-              <p>message...</p>
+            <footer
+              id="user-messagebar"
+              class="flex-shrink-0 d-flex align-items-center"
+            >
+              <div class="row h-100">
+                <div class="col-1 d-flex align-items-center">
+                  <i
+                    class="fa-regular fa-smile fa-2x text-muted"
+                    role="button"
+                  ></i>
+                </div>
+              </div>
+              <div class="col-10 ps-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="scrivi un messagio"
+                />
+              </div>
+              <div class="col-1 d-flex justify-content-center">
+                <i class="fa-solid fas fa-microphone fa-2x text-muted"></i>
+              </div>
             </footer>
           </section>
         </div>
