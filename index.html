@@ -62,11 +62,11 @@
             </section>
             
             <!-- Chat Section -->
-            <section id="chat" class="col-8 p-0 h-100">
+            <section id="chat" class="col-8 p-0 h-100 d-flex flex-column">
 
                 <!-- header chat -->
                 <header class="bg-light-gray flex-shrink-0 d-flex justify-content-between">
-                    <div class="media d-flex">
+                    <div class="media">
                         <figure>
                             <img src="img/avatar_1.jpg" alt="Paolo Belli">
                         </figure>
@@ -77,19 +77,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3 d-flex text-muted align-item-center justify-content-around">
+                    <div class="me-3 d-flex text-muted align-items-center justify-content-around">
                         <i class="fa-solid fa-search ms-3"></i>
                         <i class="fa-solid fa-paperclip ms-3"></i>
                         <i class="fa-solid fa-ellipsis ms-3"></i>
                     </div>
                 </header>
 
+                <!-- CHAT message section -->
                 <section id="message-box" class="flex-grow-1 overflow-auto">
 
                 </section>
-                <section id="user-messagebar" class="flex-shrink-0">
+                <footer id="user-messagebar" class="flex-shrink-0">
                     <p>message...</p>
-                </section>
+                </footer>
             </section>
       </div>
     </div>
