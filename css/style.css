@@ -34,3 +34,10 @@ body{
     color: #0e0d0d; 
     text-align: center;   
 }
+
+
+/* IMG */
+img{
+    height: 60px;
+    border-radius: 50%;
+}
