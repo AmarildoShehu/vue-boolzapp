@@ -25,14 +25,15 @@ body{
 }
 
 
-/* SIDE RIGHt */
-#chat {
-    height: 75%;
+/* SIDE RIGHT Chat Section */
+#message-box {
+    
     background-image: url('/img/mine.jpg');
     background-size: cover;
     background-position: center;
     color: #0e0d0d; 
     text-align: center;   
+    min-height: 300px;
 }
 
 
