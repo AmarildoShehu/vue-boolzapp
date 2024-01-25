@@ -31,67 +31,81 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div id="root" class="d-flex justify-content-center align-item-center h-100">
-      <div class="container shadow bg-white row">
+    <div
+      id="root"
+      class="d-flex justify-content-center align-item-center h-100"
+    >
+      <div class="container shadow bg-white">
         <div class="row h-100">
-            
-            <!-- Sidebar -->
-            <section class="col-4 h-100 p-0 bg-light-gray">
-                <header class="d-flex justify-content-between border border-black">
-                    <div>
-                        img
-                        <span>name</span> 
-                    </div>
-                    <div>
-                        icon
-                    </div>
-                </header>
-                <section id="notifications">
-                    <p>Ricevi notifiche desktop</p>
-                </section>
-
-                    <!-- Search section -->
-                <div id="search-contacts" class="flex-shrink-0 p-2">
-                    <i class="fa-solid fa-search text-muted"></i>
-                    <input type="text" class="w-100" placeholder="Cerca contatto">
+          <!-- Sidebar -->
+          <section class="col-4 h-100 p-0 bg-light-gray">
+            <header class="d-flex justify-content-between border border-black">
+              <div>
+                img
+                <span>name</span>
+              </div>
+              <div>icon</div>
+            </header>
+            <!-- Section notifications -->
+            <section id="notifications" class="bg-light-blu flex-shrink-0">
+              <div class="media">
+                <div class="media-icon">
+                  <i class="fa-solid fa-bell-slash"></i>
                 </div>
-                <!-- contact list -->
-                <div id="contact-list" class="flex-grow-1 overflow-auto bg-white">
-                    
+              </div>
+            </section>
+
+            <!-- Search section -->
+            <div id="search-contacts" class="flex-shrink-0 p-2">
+              <i class="fa-solid fa-search text-muted"></i>
+              <input type="text" class="w-100" placeholder="Cerca contatto" />
+            </div>
+            <!-- contact list -->
+            <div
+              id="contact-list"
+              class="flex-grow-1 overflow-auto bg-white"
+            ></div>
+          </section>
+
+          <!-- Chat Section -->
+          <section id="chat" class="col-8 p-0 h-100 d-flex flex-column">
+            <!-- header chat -->
+            <header
+              class="bg-light-gray flex-shrink-0 d-flex justify-content-between"
+            ></header>
+
+            <!-- Chat messenger
+
+            <div class="media d-flex align-items-center">
+              <figure>
+                <img src="img/avatar_1.jpg" alt="Paolo Belli" />
+              </figure>
+              <div class="h-6">
+                <div>Paolo Belli</div>
+                <div class="mb-0 fw-light">
+                  <small>Ultimo accesso:</small>
                 </div>
-            </section>
-            
-            <!-- Chat Section -->
-            <section id="chat" class="col-8 p-0 h-100 d-flex flex-column">
+              </div>
+            </div>
+            <div
+              class="me-3 d-flex text-muted align-items-center justify-content-around"
+            >
+              <i class="fa-solid fa-search ms-3"></i>
+              <i class="fa-solid fa-paperclip ms-3"></i>
+              <i class="fa-solid fa-ellipsis ms-3"></i>
+            </div> -->
 
-                <!-- header chat -->
-                <header class="bg-light-gray flex-shrink-0 d-flex justify-content-between">
-                    <div class="media">
-                        <figure>
-                            <img src="img/avatar_1.jpg" alt="Paolo Belli">
-                        </figure>
-                        <div class="h-6 media-text">
-                            <div>Paolo Belli</div>
-                            <div class="mb-0 fw-light">
-                                <small>Ultimo accesso:</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 d-flex text-muted align-items-center justify-content-around">
-                        <i class="fa-solid fa-search ms-3"></i>
-                        <i class="fa-solid fa-paperclip ms-3"></i>
-                        <i class="fa-solid fa-ellipsis ms-3"></i>
-                    </div>
-                </header>
+            <!-- CHAT message section -->
+            <section
+              class="flex-grow-1 overflow-auto chat-background"
+            ></section>
 
-                <!-- CHAT message section -->
-                <section id="message-box" class="flex-grow-1 overflow-auto">
-
-                </section>
-                <footer id="user-messagebar" class="flex-shrink-0">
-                    <p>message...</p>
-                </footer>
-            </section>
+            <!-- chat footer -->
+            <footer id="user-messagebar" class="flex-shrink-0">
+              <p>message...</p>
+            </footer>
+          </section>
+        </div>
       </div>
     </div>
   </body>
