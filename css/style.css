@@ -22,7 +22,7 @@ body {
   background-color: antiquewhite;
 }
 
-/* common */
+/* common media*/
 .bg-light-blu {
   background-color: var(--light-blue);
 }
@@ -59,6 +59,22 @@ body {
   margin-left: 0.5rem;
 }
 
+/* Search sidebar */
+#search-contacts {
+  height: 50px;
+  position: relative;
+}
+#search-contacts .fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+#search-contacts input {
+  padding-left: 50px;
+  border: 0;
+  height: 100%;
+}
 /* SIDE LEFT */
 .side {
   border: 1px solid black;
