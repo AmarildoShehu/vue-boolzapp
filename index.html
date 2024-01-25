@@ -149,18 +149,20 @@
                   :key="selectedContact.id"
                   class="message-container d-flex p-3 received"
                 >
-                  <div
-                    v-for="message in selectedContact.messages"
-                    :key="message.id"
-                    class="message p-2 rounded-3"
-                  >
-                    <p v-if="message.status === 'received'">
-                      {{ message.text }}
-                    </p>
-                    <time datetime="2024-01-01T13:00"
-                      >{{ formatDateTime(message.date) }}</time
+                  <ul class="messages-list px-3">
+                    <li
+                      v-for="message in selectedContact.messages"
+                      :key="message.id"
+                      class="message p-2 rounded-3"
                     >
-                  </div>
+                      <p v-if="message.status === 'received'">
+                        {{ message.text }}
+                      </p>
+                      <time :datetime="message.date"
+                        >{{ formatDateTime(message.date) }}</time
+                      >
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </section>

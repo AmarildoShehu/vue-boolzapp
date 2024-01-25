@@ -22,6 +22,16 @@ body {
   background-color: antiquewhite;
 }
 
+.messages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages-list li {
+  margin-bottom: 10px;
+}
+
 /* common media*/
 .bg-light-gray {
   background-color: var(--light-gray);
