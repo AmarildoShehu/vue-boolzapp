@@ -24,7 +24,7 @@ body {
 
 /* common media*/
 .bg-light-gray {
-  background-color: var(--base-gray);
+  background-color: var(--light-gray);
 }
 .bg-light-blu {
   background-color: var(--light-blue);
@@ -42,7 +42,7 @@ body {
 }
 
 .media img {
-  height: 100%;
+  height: 90%;
   border-radius: 50%;
 }
 
@@ -113,4 +113,8 @@ body {
   text-align: right;
   font-size: 11px;
   color: rgba(80, 79, 79, 0.815);
+}
+
+#user-messagebar {
+  background-color: var(--light-gray);
 }
