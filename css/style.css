@@ -23,6 +23,9 @@ body {
 }
 
 /* common media*/
+.bg-light-gray {
+  background-color: var(--base-gray);
+}
 .bg-light-blu {
   background-color: var(--light-blue);
 }

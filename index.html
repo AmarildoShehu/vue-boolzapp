@@ -85,39 +85,44 @@
             </div>
 
             <!-- contact list -->
-            <div
-              id="contact-list"
-              class="flex-grow-1 overflow-auto bg-white"
-            ></div>
+            <div id="contact-list" class="flex-grow-1 overflow-auto bg-white">
+              <ul class="m-0 p-0">
+                <li class="media">
+                  <figure>
+                    <img src="img/avatar_1.jpg" alt="Johnny" />
+                  </figure>
+                  <div class="h-6 media-text">Johnny</div>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <!-- Chat Section -->
           <section id="chat" class="col-8 p-0 h-100 d-flex flex-column">
             <!-- header chat -->
             <header
-              class="bg-light-gray flex-shrink-0 d-flex justify-content-between"
-            ></header>
-
-            <!-- Chat messenger
-
-            <div class="media d-flex align-items-center">
-              <figure>
-                <img src="img/avatar_1.jpg" alt="Paolo Belli" />
-              </figure>
-              <div class="h-6">
-                <div>Paolo Belli</div>
-                <div class="mb-0 fw-light">
-                  <small>Ultimo accesso:</small>
+              id="user-section"
+              class="d-flex justify-content-between flex-shrink-0 bg-light-gray"
+            >
+              <div class="media">
+                <figure>
+                  <img src="img/avatar_2.jpg" alt="Steve" />
+                </figure>
+                <div>
+                  <div class="h-6 text">Steve</div>
+                  <div class="fw-light mb-0">
+                    <small>Ultimo Accesso:</small>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="me-3 d-flex text-muted align-items-center justify-content-around"
-            >
-              <i class="fa-solid fa-search ms-3"></i>
-              <i class="fa-solid fa-paperclip ms-3"></i>
-              <i class="fa-solid fa-ellipsis ms-3"></i>
-            </div> -->
+              <div
+                class="me-3 d-flex justify-content-around align-items-center"
+              >
+                <i class="fa-solid fas fas fa-search ms-3" role="button"></i>
+                <i class="fa-solid fa-paperclip ms-3" role="button"></i>
+                <i class="fa-solid fas fa-ellipsis-v ms-3" role="button"></i>
+              </div>
+            </header>
 
             <!-- CHAT message section -->
             <section
