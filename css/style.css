@@ -22,6 +22,24 @@ body {
   background-color: antiquewhite;
 }
 
+/* common */
+.media {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.media figure {
+  height: 70px;
+  padding: 5px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.media img {
+  height: 100%;
+  border-radius: 50%;
+}
+
 /* SIDE LEFT */
 .side {
   border: 1px solid black;
@@ -43,12 +61,4 @@ header {
 
 footer {
   height: 70px;
-}
-
-/* IMG */
-img {
-  margin-top: 15px;
-  height: 70px;
-  padding: 10px;
-  border-radius: 50%;
 }
