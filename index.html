@@ -38,7 +38,10 @@
       <div class="container shadow bg-white">
         <div class="row h-100">
           <!-- Sidebar -->
-          <section id="sidebar" class="col-4 h-100 p-0 bg-light-gray">
+          <section
+            id="sidebar"
+            class="col-4 h-100 p-0 bg-light-gray d-flex flex-column"
+          >
             <!-- User sidebar header -->
             <header
               id="user-section"
@@ -46,7 +49,7 @@
             >
               <div class="media">
                 <figure>
-                  <img src="img/avatar_io.jpg" :alt="user-name" />
+                  <img :src="`img/avatar${user.avatar}.jpg`" :alt="Silvia" />
                 </figure>
                 <div class="h-6 text">{{user.name}}</div>
               </div>
@@ -87,11 +90,14 @@
             <!-- contact list -->
             <div id="contact-list" class="flex-grow-1 overflow-auto bg-white">
               <ul class="m-0 p-0">
-                <li class="media">
+                <li v-for="contact in contacts" :key="contact.id" class="media">
                   <figure>
-                    <img src="img/avatar_1.jpg" alt="Johnny" />
+                    <img
+                      :src="`img/avatar${contact.avatar}.jpg`"
+                      :alt="contact.name"
+                    />
                   </figure>
-                  <div class="h-6 media-text">Johnny</div>
+                  <div class="h-6 media-text">{{contact.name}}</div>
                 </li>
               </ul>
             </div>
