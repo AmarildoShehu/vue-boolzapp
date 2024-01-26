@@ -99,7 +99,7 @@ body {
   text-align: center;
 }
 
-.sent {
+/* .sent {
   justify-content: end;
 }
 
@@ -108,14 +108,17 @@ body {
 }
 
 .sent .message {
+  background-color: #d5f9ba; */
+/* } */
+
+.sent .message {
   background-color: #d5f9ba;
+  align-self: flex-end;
 }
 
 .received .message {
-  background-color: var(--light-gray);
-}
-.message p {
-  margin-bottom: 0;
+  background-color: #efefef; /* Colore di sfondo per i messaggi ricevuti */
+  align-self: flex-start;
 }
 
 .message time {
