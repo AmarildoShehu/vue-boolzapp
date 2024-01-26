@@ -23,33 +23,23 @@ const app = createApp({
     },
     // Aggiunge un nuovo messaggio e ottiene una risposta dopo 1 secondo
     addMessage() {
-      if (!this.activeContact || !this.newMessageText) {
-        return;
-      }
+      if (!this.activeContact || !this.newMessageText) return;
 
-      // Aggiungi il messaggio nella conversazione
-      const newMessage = {
-        id: Date.now(),
-        text: this.newMessageText,
-        date: new Date().toISOString(),
-        status: "sent",
-      };
+      this.addNewMessage("sent", this.newMessageText);
 
-      this.activeContact.messages.push(newMessage);
-
-      // Pulisci il campo di input
       this.newMessageText = "";
 
-      // risposta ok dopo 1 secondo
       setTimeout(() => {
-        const replyMessage = {
-          id: Date.now() + 1,
-          text: "Ok",
-          date: new Date().toISOString(),
-          status: "received",
-        };
-        this.activeContact.messages.push(replyMessage);
+        this.addNewMessage("received", "Ok");
       }, 1000);
+    },
+    addNewMessage(status, text) {
+      this.activeContact.messages.push({
+        id: Date.now(),
+        text,
+        date: new Date().toISOString(),
+        status,
+      });
     },
   },
 });
