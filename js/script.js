@@ -8,12 +8,14 @@ const app = createApp({
     return {
       contacts: data.contacts,
       user: data.user,
+      activeContact: null,
     };
   },
   methods: {
     //Conversazione contatto
     showConversation(contact) {
       console.log("conversazione di", contact.name);
+      this.activeContact = contact;
     },
   },
 });

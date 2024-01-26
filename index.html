@@ -90,7 +90,12 @@
             <!-- contact list -->
             <div id="contact-list" class="flex-grow-1 overflow-auto bg-white">
               <ul class="m-0 p-0">
-                <li v-for="contact in contacts" :key="contact.id" class="media">
+                <li
+                  v-for="contact in contacts"
+                  :key="contact.id"
+                  class="media"
+                  @click="showConversation(contact)"
+                >
                   <figure>
                     <img
                       :src="`img/avatar${contact.avatar}.jpg`"
@@ -133,16 +138,15 @@
             <!-- CHAT message section -->
             <section class="flex-grow-1 overflow-auto chat-background">
               <ul class="px-3">
-                <li class="message-container d-flex p-3 sent">
+                <li
+                  v-for="message in activeContact ? activeContact.messages : []"
+                  :key="message.id"
+                  :class="{ 'sent': message.status === 'sent', 'received': message.status === 'received' }"
+                  class="message-container d-flex p-3"
+                >
                   <div class="message p-2 rounded-3">
-                    <p>Che stai facendo?</p>
-                    <time datetime="2024-01-01T13.00">01/01/2024 - 13:00</time>
-                  </div>
-                </li>
-                <li class="message-container d-flex p-3 received">
-                  <div class="message p-2 rounded-3">
-                    <p>Che stai facendo?</p>
-                    <time datetime="2024-01-01T13.00">01/01/2024 - 13:00</time>
+                    <p>{{ message.text }}</p>
+                    <time :datetime="message.date">{{ message.date }}</time>
                   </div>
                 </li>
               </ul>
