@@ -10,6 +10,12 @@ const app = createApp({
       user: data.user,
     };
   },
+  methods: {
+    //Conversazione contatto
+    showConversation(contact) {
+      console.log("conversazione di", contact.name);
+    },
+  },
 });
 
 app.mount("#root");
