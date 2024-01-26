@@ -172,9 +172,11 @@
               </div>
               <div class="col-10 ps-2">
                 <input
+                  v-model="newMessageText"
+                  @keyup.enter="addMessage"
                   type="text"
                   class="form-control"
-                  placeholder="scrivi un messagio"
+                  placeholder="scrivi un messaggio"
                 />
               </div>
               <div class="col-1 d-flex justify-content-center">
