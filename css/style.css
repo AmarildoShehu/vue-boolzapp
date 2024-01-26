@@ -99,26 +99,20 @@ body {
   text-align: center;
 }
 
-/* .sent {
-  justify-content: end;
+.sent {
+  justify-content: flex-end;
+  text-align: end;
 }
-
-.received {
-  justify-content: start;
-}
-
-.sent .message {
-  background-color: #d5f9ba; */
-/* } */
 
 .sent .message {
   background-color: #d5f9ba;
-  align-self: flex-end;
 }
-
+.received {
+  justify-content: flex-start;
+  text-align: start;
+}
 .received .message {
-  background-color: #efefef; /* Colore di sfondo per i messaggi ricevuti */
-  align-self: flex-start;
+  background-color: #efefef;
 }
 
 .message time {
