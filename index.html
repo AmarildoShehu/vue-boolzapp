@@ -117,10 +117,15 @@
             >
               <div class="media">
                 <figure>
-                  <img src="img/avatar_2.jpg" alt="Steve" />
+                  <img
+                    :src="activeContact ? `img/avatar${activeContact.avatar}.jpg` : ''"
+                    :alt="activeContact ? activeContact.name : ''"
+                  />
                 </figure>
                 <div>
-                  <div class="h-6 text">Steve</div>
+                  <div class="h-6 text">
+                    {{ activeContact ? activeContact.name : '' }}
+                  </div>
                   <div class="fw-light mb-0">
                     <small>Ultimo Accesso:</small>
                   </div>
