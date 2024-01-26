@@ -40,7 +40,7 @@
           <!-- Sidebar -->
           <section
             id="sidebar"
-            class="col-4 h-100 p-0 bg-light-gray d-flex flex-column"
+            class="col-4 h-100 p-0 d-flex flex-column bg-light-gray"
           >
             <!-- User sidebar header -->
             <header
@@ -49,7 +49,7 @@
             >
               <div class="media">
                 <figure>
-                  <img :src="`img/avatar${user.avatar}.jpg`" :alt="Silvia" />
+                  <img src="img/avatar_io.jpg" :alt="user-name" />
                 </figure>
                 <div class="h-6 text">{{user.name}}</div>
               </div>
@@ -97,7 +97,7 @@
                       :alt="contact.name"
                     />
                   </figure>
-                  <div class="h-6 media-text">{{contact.name}}</div>
+                  <div class="h-6 media-text">{{ contact.name }}</div>
                 </li>
               </ul>
             </div>
