@@ -84,14 +84,19 @@
             <!-- Search section -->
             <div id="search-contacts" class="flex-shrink-0 p-2">
               <i class="fa-solid fa-search text-muted"></i>
-              <input type="text" class="w-100" placeholder="Cerca contatto" />
+              <input
+                v-model="searchText"
+                type="text"
+                class="w-100"
+                placeholder="Cerca contatto"
+              />
             </div>
 
             <!-- contact list -->
             <div id="contact-list" class="flex-grow-1 overflow-auto bg-white">
               <ul class="m-0 p-0">
                 <li
-                  v-for="contact in contacts"
+                  v-for="contact in filteredContacts"
                   :key="contact.id"
                   class="media"
                   @click="showConversation(contact)"

@@ -13,7 +13,17 @@ const app = createApp({
 
       // testo del nuovo messaggio
       newMessageText: "",
+
+      searchText: "",
     };
+  },
+  computed: {
+    // filtra i contatti in base al testo di ricerca
+    filteredContacts() {
+      return this.contacts.filter((contact) =>
+        contact.name.toLowerCase().includes(this.searchText.toLowerCase())
+      );
+    },
   },
   methods: {
     //Conversazione contatto
